@@ -1,0 +1,136 @@
+job:
+  output_dirpath: ./outputs
+  ic_debug: false
+  project_name: umo-flux-klein
+  name: experiment-001
+
+training_args:
+  per_device_train_batch_size: 1
+  gradient_checkpointing: true
+  gradient_accumulation_steps: 1
+  mixed_precision: bf16-true
+  learning_rate: 5e-6
+
+  optimizer:
+    name: adamw
+    optimizer_args:
+      weight_decay: 0.01
+      betas: [0.9, 0.95]
+      fused: false
+    zero_grad_set_to_none: true
+    optimizer_release_gradients: false
+
+  max_grad_norm: 3.0
+  grad_clip_method: norm
+  num_train_epochs: 1
+  max_steps: -1
+
+  lr_scheduler:
+    name: constant
+    warmup_steps: 100
+    lr_scheduler_args: {}
+    warmup_ratio: 0.0
+
+  log_level: INFO
+  logging_steps: 1
+  seed: 42
+  data_seed: ${training_args.seed}
+  gc_freq: 1
+  enable_cpu_offload: false
+
+  report_to:
+    console:
+      logging_mode: per_rank_reduce
+    json:
+      logging_mode: per_rank_reduce
+      jsonl_file: ${job.output_dirpath}/${job.project_name}/${job.name}/logs/metrics.jsonl
+
+train_spec:
+  _component_: train_spec_flux_klein.get_train_spec
+
+  model_args:
+    pretrained_model_name_or_path: "black-forest-labs/FLUX.2-klein-base-9B"
+    text_encoder_model_name_or_path: null
+    tokenizer_model_name_or_path: null
+    enable_gradient_checkpointing: ${training_args.gradient_checkpointing}
+    lora_rank: 128
+    lora_alpha: 128
+    lora_target_modules: ["to_k", "to_q", "to_v", "to_out.0"]
+    include_final_layer_lora: true
+    strict_lora_target_match: true
+    lora_dropout: 0.0
+    lora_initialisation_style: "gaussian"
+    offload_vae: ${training_args.enable_cpu_offload}
+    offload_text_encoder: ${training_args.enable_cpu_offload}
+    num_transformer_blocks_to_swap: 0
+    timestep_sampling: logit_normal
+    logit_mean: 0.0
+    logit_std: 1.0
+    discrete_flow_shift: 3.0
+    flow_schedule_auto_shift: false
+    guidance_scale: 4.0
+    max_sequence_length: 512
+    text_encoder_out_layers: [9, 18, 27]
+    pretrain_loss_weight: 1.0
+    refl_loss_weight: -1.0
+    noise_scheduler_timesteps: 50
+    noise_scheduler_timestep_range_start: 10
+    noise_scheduler_timestep_range_end: 30
+
+  dataset_args:
+    metadata_path: /mnt/data/ayushman/git/miyagi/inputs/datasets/umo_training_data_v1.jsonl.jsonl
+    image_folder: null
+    image_id_column: "image_path"
+    instruction_column: "instruction"
+    reference_image_paths_column: "reference_image_paths"
+    height_column: "height"
+    width_column: "width"
+    crop: false
+    center_crop: false
+    reso_steps: 32
+    no_upscale: true
+    resolution: [1024, 1024]
+    min_resolution: 256
+    max_resolution: 1584
+    bucket_enabled: true
+    bucket_pruning_enabled: false
+    batch_size: ${training_args.per_device_train_batch_size}
+    random_seed: ${training_args.data_seed}
+    cache_buckets: true
+    cache_dir: ${job.output_dirpath}/dataset_cache-${job.project_name}
+    infinite: true
+
+parallelism:
+  data_parallel_replicate_degree: 1
+  data_parallel_shard_degree: -1
+
+checkpoint:
+  resume_from_checkpoint: false
+  enable: true
+  folder: checkpoint
+  interval: 100
+  keep_latest_k: 10
+  enable_first_step_checkpoint: true
+
+comm:
+  init_timeout_seconds: 12000
+  train_timeout_seconds: 300
+  trace_buf_size: 20000
+  save_traces_folder: comm_traces
+  save_traces_file_prefix: rank_
+
+compile:
+  enable: true
+  components:
+    - loss
+    - model
+  backend: inductor
+
+profiling:
+  enable_profiling: false
+  save_traces_folder: profile_traces
+  profile_freq: 1
+  profiler_warmup: 0
+  profiler_active: 1
+  enable_memory_snapshot: false
+  save_memory_snapshot_folder: memory_snapshot
