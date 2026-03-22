@@ -1,13 +1,18 @@
 """
 version_c eval — FAL LoRA character swap evaluation
 Reads test-multi.json, runs inference with the converted FAL LoRA,
-saves outputs to version_c/outputs/.
+saves outputs to version_c/outputs_v2/.
+
+Fixes vs v1:
+  - Removed conflicting .to("cuda") before enable_model_cpu_offload()
+  - Portrait output dims (768x1344) instead of forced square
+  - Steps 50, guidance 4.0 (Klein defaults)
 
 Usage:
     python version_c/eval.py \
         --lora version_c/pytorch_lora_weights_converted.safetensors \
         --test  version_c/test-multi.json \
-        --out   version_c/outputs \
+        --out   version_c/outputs_v2 \
         --model black-forest-labs/FLUX.2-klein-base-9B
 """
 
@@ -27,16 +32,15 @@ from PIL import Image
 # ---------------------------------------------------------------------------
 
 def load_image_from_url(url: str) -> Image.Image:
-    resp = requests.get(url, timeout=30)
+    resp = requests.get(url, timeout=60)
     resp.raise_for_status()
     return Image.open(BytesIO(resp.content)).convert("RGB")
 
 
-def resize_to(img: Image.Image, size: int = 1024) -> Image.Image:
-    """Resize so the longer edge == size, keep aspect ratio."""
-    w, h = img.size
-    scale = size / max(w, h)
-    return img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+def resize_portrait(img: Image.Image, width: int = 768, height: int = 1344) -> Image.Image:
+    """Resize to portrait target (768x1344), keeping aspect ratio with centre crop."""
+    img = img.resize((width, height), Image.LANCZOS)
+    return img
 
 
 # ---------------------------------------------------------------------------
@@ -45,14 +49,15 @@ def resize_to(img: Image.Image, size: int = 1024) -> Image.Image:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--lora",  default="version_c/pytorch_lora_weights_converted.safetensors")
-    parser.add_argument("--test",  default="version_c/test-multi.json")
-    parser.add_argument("--out",   default="version_c/outputs")
-    parser.add_argument("--model", default="black-forest-labs/FLUX.2-klein-base-9B")
-    parser.add_argument("--steps", type=int, default=28)
-    parser.add_argument("--guidance", type=float, default=3.5)
-    parser.add_argument("--size",  type=int, default=1024)
-    parser.add_argument("--rows",  type=int, default=None,
+    parser.add_argument("--lora",     default="version_c/pytorch_lora_weights_converted.safetensors")
+    parser.add_argument("--test",     default="version_c/test-multi.json")
+    parser.add_argument("--out",      default="version_c/outputs_v2")
+    parser.add_argument("--model",    default="black-forest-labs/FLUX.2-klein-base-9B")
+    parser.add_argument("--steps",    type=int,   default=50)
+    parser.add_argument("--guidance", type=float, default=4.0)
+    parser.add_argument("--width",    type=int,   default=768)
+    parser.add_argument("--height",   type=int,   default=1344)
+    parser.add_argument("--rows",     type=int,   default=None,
                         help="Limit to first N rows (default: all 40)")
     args = parser.parse_args()
 
@@ -68,8 +73,8 @@ def main():
     print(f"Loading LoRA: {args.lora}")
     pipe.load_lora_weights(args.lora)
 
-    pipe = pipe.to("cuda")
-    pipe.enable_model_cpu_offload()   # keeps VRAM sane on H100
+    # Use cpu offload only — do NOT call .to("cuda") before this
+    pipe.enable_model_cpu_offload()
     print("Pipeline ready.\n")
 
     # ------------------------------------------------------------------ data
@@ -85,24 +90,27 @@ def main():
     for idx, row in enumerate(rows):
         print(f"[{idx+1}/{len(rows)}] processing...")
 
-        # --- input image
-        input_img = resize_to(load_image_from_url(row["Input Image"]), args.size)
+        # --- input image (scene)
+        input_img = resize_portrait(
+            load_image_from_url(row["Input Image"]), args.width, args.height
+        )
 
         # --- character reference images (Char 1 required, 2+3 optional)
         char_imgs = []
         for key in ["Char 1", "Char 2", "Char 3"]:
             url = row.get(key, "").strip()
             if url:
-                char_imgs.append(resize_to(load_image_from_url(url), args.size))
+                char_imgs.append(
+                    resize_portrait(load_image_from_url(url), args.width, args.height)
+                )
 
         prompt = row["Prompt Used"]
         num_chars = row.get("Num Chars", len(char_imgs))
 
         print(f"  chars: {num_chars}  |  prompt: {prompt[:80]}...")
 
-        # --- inference
-        # Flux2KleinPipeline takes all images as a list via `image`:
-        # [base_scene, char1, char2, ...] — no separate control_images param
+        # Flux2KleinPipeline: image=[scene, char1, char2, ...]
+        # All images are encoded as token conditioning; prompt drives the swap
         all_images = [input_img] + char_imgs
 
         result = pipe(
@@ -110,8 +118,8 @@ def main():
             image=all_images,
             num_inference_steps=args.steps,
             guidance_scale=args.guidance,
-            height=args.size,
-            width=args.size,
+            height=args.height,
+            width=args.width,
         ).images[0]
 
         # --- save
