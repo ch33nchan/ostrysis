@@ -1,0 +1,336 @@
+{
+  "source_sheet_id": "1UDPwDbTh-6_xu44gd4NC3gVRqSDHxH07BLK8L6hoR-M",
+  "worksheet_gid": 863012285,
+  "worksheet_title": "Copy of Unified 1-3 Char",
+  "columns": [
+    "Input Image",
+    "Char 1",
+    "Char 2",
+    "Char 3",
+    "Num Chars",
+    "Prompt Used"
+  ],
+  "row_count": 40,
+  "data": [
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/stability-images/upscale-outputs/TSKaxsL4ipKjdU76e53__SHT6rEmgLQuMeZh2n5s__YqW6vuoQJOQp/final.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/11964d86-b1fc-416f-a2e1-ea461f310aa1.png",
+      "Char 2": "https://dev-content.dashtoon.ai/user-uploaded-files/a431575c-109c-43e6-906d-ec9c04156f10.jpeg",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "In a recreation of image 1, replace the man in the light blue polo with the man in the off-white tunic from image 2, and replace the girl in the pink dress with the girl with curly hair from image 3. The man from image 2 should be lifting the girl from image 3, perfectly maintaining the pose, action, and affectionate gaze seen in image 1. The man from image 2 must be dressed in his off-white tunic and utility belt, while the girl from image 3 should be wearing her white shirt with the colorful floral pattern. Retain the exact indoor background from image 1, including the wooden door on the left and the white bed frame at the bottom, ensuring the composition and lighting remain consistent with the original base image."
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/9bfd29d5-b5e5-4ea0-9d59-c02742800398.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/24322a38-58f9-4460-af41-f35da32c665e.png",
+      "Char 2": "https://dev-content.dashtoon.ai/user-uploaded-files/ad866d71-da2d-4e26-ab5f-550fee26fff5.png",
+      "Char 3": "https://dev-content.dashtoon.ai/user-uploaded-files/7168c00d-02be-4075-ad30-49f9ea115eca.png",
+      "Num Chars": "3",
+      "Prompt Used": "High-angle shot replicating the composition and environment of Image 1, featuring three people seated on a tufted beige sofa against a gold-patterned marble-style wall. Replace the three figures from Image 1, proceeding from left to right, with the characters from the following images while maintaining the original poses, somber expressions, and downward gazes. First, replace the man on the left with the bearded man wearing the dark grey suit and black shirt from Image 2. Second, replace the young woman in the center with the woman in the yellow gown with pink floral accents and a tiara from Image 3. Third, replace the woman on the right with the woman wearing the black and tan checkered grid-patterned dress from Image 4. Ensure that each character retains the clothing and hairstyles shown in their respective source images (Images 2, 3, and 4). The foreground coffee table with the fruit bowl and the overall room layout must remain consistent with Image 1."
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/4a736f5d-d005-4a45-903c-f62fc06e36a6.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/24322a38-58f9-4460-af41-f35da32c665e.png",
+      "Char 2": "https://dev-content.dashtoon.ai/user-uploaded-files/ad866d71-da2d-4e26-ab5f-550fee26fff5.png",
+      "Char 3": "https://dev-content.dashtoon.ai/user-uploaded-files/7168c00d-02be-4075-ad30-49f9ea115eca.png",
+      "Num Chars": "3",
+      "Prompt Used": "Replace the man in the tan suit on the left of Image 1 with the bearded man in the dark grey suit from image 2, the young woman in the white blouse in the middle of Image 1 with the woman with the tiara and gold dress from image 3, and the woman in the white shirt on the right of Image 1 with the woman in the black and brown checkered dress from image 4, while maintaining the pose, action, gaze, expression, composition, framing, and background from original Image 1. Swap the provided characters in the said order even in the case of gender mismatch. Clothes and outfits from character images 2, 3, and 4 should also be carried over into the final image."
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/503e1ec9-877e-49c7-b8e0-47e5b4e1a472.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/24322a38-58f9-4460-af41-f35da32c665e.png",
+      "Char 2": "https://dev-content.dashtoon.ai/user-uploaded-files/7168c00d-02be-4075-ad30-49f9ea115eca.png",
+      "Char 3": "https://dev-content.dashtoon.ai/user-uploaded-files/ad866d71-da2d-4e26-ab5f-550fee26fff5.png",
+      "Num Chars": "3",
+      "Prompt Used": "Perform a character replacement in the scene depicted in Image 1 while strictly maintaining the original pose, action, gaze, expression, and environment. Replace the man in the brown blazer on the left side of the sofa with the bearded man in the dark grey suit from Image 2, keeping him in the act of peeling the fruit. Replace the woman in the white blouse sitting next to him with the woman in the brown and black checkered dress from Image 3. Replace the woman walking through the background doorway with the woman with the tiara in the yellow-gold gown from Image 4. Each character should wear the exact outfit and exhibit the physical characteristics shown in their reference images (the dark suit and black shirt from Image 2, the checkered high-neck dress from Image 3, and the yellow-gold floral gown with the tiara and watch from Image 4). The background interior, the coffee table with the fruit and tea set, and the overall composition must remain identical to Image 1."
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/69faa109-f7d9-4e43-898e-c6a164934f27.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/21df6f9a-7cf1-4714-8925-17faeb263548.png",
+      "Char 2": "https://dev-content.dashtoon.ai/user-uploaded-files/3f424d2b-84cb-4245-9ad6-42c1b3b544db.png",
+      "Char 3": "https://dev-content.dashtoon.ai/user-uploaded-files/3f5a140d-8bfc-445c-9487-99ebb2b64b62.png",
+      "Num Chars": "3",
+      "Prompt Used": "A cinematic scene based on Image 1, set in front of an ambulance with the text overlay 'if this was your daughter and she was-'. Replace the three characters in Image 1 from left to right with the characters from the other images while strictly maintaining the original poses, actions, and expressions. The man on the left in Image 1 is replaced by the man in the blue plaid shirt from image 2, wearing his blue plaid button-up shirt and brown pants. The woman in the center of Image 1 (the police officer) is replaced by the woman in the paramedic uniform from image 3, adopting her short hair and dark blue paramedic outfit, while performing the exact same hand gestures and speaking expression. The woman on the right in Image 1 (in red) is replaced by the blonde woman with the blue beanie from image 4, featuring her wavy blonde hair, blue beanie, and grey cropped jacket with black leggings, while maintaining the same concerned gaze. The background, composition, and framing must remain identical to Image 1."
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/4d1a268d-fc34-4274-ba53-9f31c07353d8.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/2491fd1e-c82b-4d88-be16-3c82b339fef2.png",
+      "Char 2": "https://dev-content.dashtoon.ai/user-uploaded-files/5685149a-7bc3-495a-a2bc-bad0fbea7f88.png",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "Using Image 1 as the base composition, replace the characters while maintaining the exact poses, actions, gazes, and background. First, replace the woman in the red jacket in image 1 (foreground) with the woman in the blue paramedic uniform in image 2. This new character should have the short dark hair and facial features of the woman in image 2 and wear the full navy blue paramedic uniform with the 'PARAMEDIC' text and embroidered patches as shown in image 2. Second, replace the police officer in image 1 (background right) with the blonde woman with the blue beanie in image 3. This character should have the shoulder-length blonde hair and facial features of the woman in image 3 and wear the dark blue beanie, the grey cropped jacket, and the athletic gear from image 3. Ensure the background including the ambulance, the framing, and the specific lighting from Image 1 remain unchanged."
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/4399a290-307c-43b4-8338-fb66e1167579.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/640df755-d99d-4794-bd5b-972c480b55e8.png",
+      "Char 2": "https://dev-content.dashtoon.ai/user-uploaded-files/dc4d97d8-ac8f-4fe1-a6fa-ac7a0f3609d8.png",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "In Image 1, replace the characters from left to right with the characters from Image 2 and Image 3. Specifically, replace 'the man in the black tuxedo on the left' with 'the man with long wavy hair and a beard in the maroon traditional outfit from Image 2'. Then, replace 'the woman in the dark blue dress on the right' with 'the woman in the dark brown saree with gold jewelry from Image 3'. The characters from Image 2 and Image 3 must maintain their respective outfits, hair, and features while perfectly inheriting the pose, action, and gaze of the original subjects: the man should stand with his hands behind his back looking off-camera, and the woman should be clutching his arm with the same intense, grimacing facial expression. The composition, framing, lighting, and background of Image 1 must remain entirely unchanged."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/388dbfe8-f81b-4beb-8298-f806a43b0246.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/c2d9956e-13dc-43cc-99e1-d8e37763b516.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/c165debe-7fc6-4e87-be10-58b2f9212a60.jpeg",
+      "Char 3": "https://content.dashtoon.ai/user-uploaded-files/d244022d-0c8e-4a0e-8549-a486a1e442af.png",
+      "Num Chars": "3",
+      "Prompt Used": "Replace the three characters in image 1 from left to right with the characters from images 2, 3, and 4 respectively. Replace the man on the left in the plaid coat from image 1 with the man in the black leather jacket from image 2, ensuring he maintains the leaning pose and action. Replace the woman sitting on the hospital bed in image 1 with the blonde woman in the white shirt from image 3, keeping her sitting posture and expression. Replace the doctor on the right in image 1 with the man in the white lab coat and stethoscope from image 4, maintaining the same standing position and gaze. All replacement characters from images 2, 3, and 4 should wear their respective outfits from their source images. The background, composition, lighting, and specific poses of the characters in image 1 must be perfectly preserved."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/08c10d2d-52e9-476d-81ad-40c9bf7ddb28.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/d9b97ae5-81a6-41ce-90d5-350e05519714.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/9d9ef0a5-0d56-4d06-8fcc-bd76ac4e2ce8.png",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "Image 1 is the base image featuring the woman with long reddish hair in the leopard-print coat (left) and the man in the blue shirt in the background (right). Image 2 is the character image of the blonde woman in the beige fur coat. Image 3 is the character image of the man with the dark hair bun and navy shirt. Replace the characters in Image 1 from left to right with the characters present in Image 2 and Image 3, while maintaining the pose, action, gaze, expression, composition, framing, and background from the original. Specifically, the blonde woman from Image 2 should replace the woman in the foreground leaning against the red car, and the man from Image 3 should replace the man in the background. Swap the provided characters in the said order even in the case of gender mismatch. Clothes and outfits should also be swapped over from the respective source images."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/d9f23974-aca9-4336-b342-c628ba198170.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/d9b97ae5-81a6-41ce-90d5-350e05519714.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/9d9ef0a5-0d56-4d06-8fcc-bd76ac4e2ce8.png",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "A composite image based on the composition and action of Image 1. Replace the woman leaning out of the red sports car in Image 1 with the blonde woman in the fur coat in image 2. She must retain the exact aggressive, shouting facial expression, pose leaning out of the driver's side window, and action of triumphantly holding up a red high-heeled shoe while her other hand is on the door. She should be wearing the tan fur coat from image 2. Replace the man standing in the background in Image 1 with the man with the beard and dark blue shirt in image 3. He should maintain the same slight forward-leaning walking posture and gaze towards the car, dressed in his dark blue button-down shirt and khaki pants as seen in Image 3. The background, including the red car, the street, and the storefront with the 'BONDS' sign, must remain identical to Image 1."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/93a300a7-ebb4-4fe5-a719-bab03505d4aa.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/bead70d4-31bc-4428-82d3-d65f360f222f.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/1a0dc827-d999-4c45-9e81-8bbc284c0749.png",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "A detailed image reconstruction that replaces the people in Image 1 while maintaining the exact composition, background, and poses. Following a left-to-right replacement order: replace the standing man on the left in Image 1 with the woman with long brown hair from Image 2. She should be wearing her black shirt and pants, holding the pink gift box, and looking towards the other character. Then, replace the sitting woman on the right in Image 1 with the bearded man in the cream shirt and apron from Image 3. He should be seated on the dark leather couch, looking down at the smartphone, maintaining the original woman's pose and expression. Both replacement characters must bring their respective outfits from Image 2 and Image 3 into the scene. The modern interior background, including the black ribbed wall and the fireplace, must remain identical to Image 1."
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/b005986d-ab1b-4c8e-b3a3-6761e1aa035a.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/0d9c9650-becb-44d8-81ac-9238d7755bf5.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/ec26e2c9-2dea-45de-bd95-85d0481cb64a.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/97daa8de-1c92-4314-81b6-a8240be81d70.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/66c5c3f5-a297-4e7d-906e-cc396637b49a.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/f1171290-f4e9-463f-ae15-b9fdd27fe883.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/e80bc410-a0d3-4363-b32e-0029bdcf6a4a.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/97daa8de-1c92-4314-81b6-a8240be81d70.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/a94bb564-95e5-469f-b875-c759870291d3.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/ccb5e8f6-eeb4-4e0f-bfe5-4ba149ef09c4.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/f76056db-ac2b-48ab-b123-562533309dcc.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/2e5b36f2-896f-450b-8519-c8172a46b26d.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/0e0a2047-7111-4104-8a6f-94b4703092c2.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/97daa8de-1c92-4314-81b6-a8240be81d70.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/fceed3b7-f0b9-4311-ad08-0b22970b3adb.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/97daa8de-1c92-4314-81b6-a8240be81d70.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/07f5c461-6b4b-49e7-aaf3-4227c397fede.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/4ac240e0-5777-469b-b492-dd209f13ad08.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/df607b03-4879-4cf4-a968-e4c125917e9f.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/f8045585-c35b-4943-8e5b-3ba16787175f.jpg",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/f5b79b9d-1ee4-407d-b281-f92d163aecfd.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/93d0460d-2981-472f-aa13-3417cc93d869.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/9f141bae-760c-4aea-a523-41019c10eb28.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/93d0460d-2981-472f-aa13-3417cc93d869.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/45299bba-d8d7-48ea-b0af-d7683b919325.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/2ec464ba-d41d-47d0-b41c-7e1a66dc8deb.jpg",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://dev-content.dashtoon.ai/user-uploaded-files/a6d05d3a-490e-431c-8ee4-c48410c1ade4.png",
+      "Char 1": "https://dev-content.dashtoon.ai/user-uploaded-files/2ec464ba-d41d-47d0-b41c-7e1a66dc8deb.jpg",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/134e2d4030894d6eb35e0019c0bfe981_a2.png",
+      "Char 1": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/b2.jpg",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/c8b5d4220c8448af84e2133ab6765f31_a3.png",
+      "Char 1": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/b3.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/e9546831321b4183aaa3dcabec388993_a4.png",
+      "Char 1": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/b4.jpg",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/55a0b099d853412dae8f8830effcb88e_a5.png",
+      "Char 1": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/b5.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/b2499814c6904a919c3b1bcaff8cfd16_a6.png",
+      "Char 1": "https://content.dashtoon.ai/stability-images/rawclaw/klein_lora_zip/b6.png",
+      "Char 2": "",
+      "Char 3": "",
+      "Num Chars": "1",
+      "Prompt Used": "Image 1 is the base image, Image 2 is the character image. Replace the character in Image 1 with the character present in Image 2, while maintaining the pose, action, composition, framing, background from the original base image"
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/514e037b-6db3-4dc0-b738-5524a2c1ff67.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/1bbae51f-f79a-41f6-8420-4a01738993b4.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/54c73d96-d8ef-49a6-a7a0-998d68ce7b4e.jpeg",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "In the scene shown in image 1, replace the young Asian girl on the left with the young blonde girl wearing the tan ribbed cardigan in image 2, and replace the Asian woman on the right with the woman with dark hair in the ivory cardigan in image 3. The new characters should adopt their respective outfits: the young blonde girl from image 2 should wear her tan ribbed cardigan with the white Peter Pan collar and brown skirt, while the woman from image 3 should wear her ivory cardigan over the white top and tan trousers. Ensure the facial features and hairstyles from image 2 and image 3 are accurately preserved. Maintain the original composition, framing, and plain background from image 1. The characters must replicate the exact poses, actions, and expressions from image 1, with the woman leaning forward and smiling warmly as she reaches toward the standing child who gazes back at her."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/e85226d8-cf3c-48b1-9979-7c83f5e61ddb.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/11cbde16-ce55-470c-886a-f081da89de73.jpeg",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/ad45d685-f43e-4064-9a88-806e5199b7c1.jpeg",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "Using Image 1 as the base, replace the characters from left to right: the seated woman with dark braided hair is replaced by the pregnant woman with blonde wavy hair from Image 2, and the standing woman in the pink sweater is replaced by the woman with curly brown hair from Image 3. The new characters must maintain the exact pose, action, gaze, expression, composition, framing, and background shown in Image 1. The outfits from Image 2 (tan ribbed dress and coat) and Image 3 (white button-up shirt) should also be swapped over. Ensure the setting of the makeup studio, the vanity mirror with lights, and the interaction between the characters are preserved precisely as in the original image."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/f9a8aeb3-75f1-4219-b74c-115c462fb3eb.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/aa22b50e-0951-47fa-8906-84e08068d4f8.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/0f99d748-2057-4d65-8edf-cb368acee3af.jpg",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "Replace the characters in Image 1 (From left to right) with the characters present in Image 2 and Image 3. Specifically, replace the red-haired woman in the leopard print coat in image 1 with the blonde woman in the tan fur coat from image 2, and replace the blurry man in the blue shirt in the background of image 1 with the man with the hair bun and beard in the navy shirt from image 3. While performing the swap, maintain the exact pose, action, gaze, expression, composition, framing, and background from the original image 1. Swap the provided characters in the said order even in the case of gender mismatch. The clothes and outfits from image 2 and image 3 should also be swapped over to replace the original clothing seen in the base image."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/cb74c1ae-2db3-4234-a257-28bde363ae49.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/aa22b50e-0951-47fa-8906-84e08068d4f8.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/0f99d748-2057-4d65-8edf-cb368acee3af.jpg",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "In Image 1, replace the woman with red hair and leopard coat (foreground) and the man in the blue polo (background) with the characters from Image 2 and Image 3 respectively. The blonde woman in the tan fur coat from Image 2 should replace the foreground woman, adopting her exact pose leaning over the red car, her upward gaze, and facial expression. She should be wearing the tan fur coat, red dress, red choker, and long flower necklace from Image 2. The man with the hair bun and navy shirt from Image 3 should replace the man in the background of Image 1, maintaining the same out-of-focus position and action of holding up a phone. He should be wearing the navy button-down shirt and beige trousers from Image 3. The red car, the street background, and the original composition and framing of Image 1 must be strictly maintained."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/e36b2485-52c9-479d-b9f2-a92c9952dd47.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/780814c0-111d-4c28-825a-db9f6021e7bd.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/fc2e9c96-aa44-402f-8354-37e44a61e908.png",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "Recreate the composition and scene of image 1, replacing the characters from left to right with the individuals from image 2 and image 3. Replace the injured girl lying down in the bottom-left with the blonde woman in the grey crop jacket and blue beanie from image 2, ensuring she is now the one lying in the lap with the same injury and pose. Replace the woman sitting upright with the young girl with brown curly hair in the pink velvet tracksuit from image 3. The young girl from image 3 should now be the one sitting in the car seat, maintaining the original woman's concerned expression, gaze, and the action of resting her hand on the other character's head. The characters should wear the outfits from their respective source images: the blonde woman in her athletic gear and beanie, and the curly-haired girl in her pink tracksuit. The car interior background, lighting, and framing must remain identical to image 1."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/58e41d81-a9da-4824-8e21-3c9843adb5cd.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/780814c0-111d-4c28-825a-db9f6021e7bd.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/fc2e9c96-aa44-402f-8354-37e44a61e908.png",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "In image 1, replace the woman in the maroon jacket with the blonde woman wearing the blue beanie and grey cropped jacket from image 2. She must maintain the same worried facial expression, seated posture, and gaze directed toward the car window. Next, replace the sleeping child in image 1 with the young girl with curly hair and bangs from image 3. This girl should be depicted sleeping horizontally across the lap of the blonde woman, matching the original girl's position and pose exactly, including the blue fluffy blanket draped over her. The girl should be wearing the pink velvet tracksuit from image 3. Keep the car interior, the cinematic lighting, and the overall composition and background of image 1 entirely unchanged."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/d31fc581-55c6-47f2-90ca-0fc233d0373e.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/d244022d-0c8e-4a0e-8549-a486a1e442af.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/c165debe-7fc6-4e87-be10-58b2f9212a60.jpeg",
+      "Char 3": "",
+      "Num Chars": "2",
+      "Prompt Used": "Replace the characters in Image 1 (From left to right) with the characters present in Image 2 and Image 3—specifically, replace the man in the long grey plaid coat with the man in the white lab coat from image 2, and replace the woman on the hospital bed with the blonde woman in the white shirt from image 3—while maintaining the pose, action, gaze, expression, composition, framing, and background from the original. Swap the provided characters in the said order even in the case of gender mismatch. Clothes/Outfits from the character images should also be swapped over into the final scene."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/61f584f5-21be-4ca2-96b3-5f5dab442011.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/dd47aae2-0a44-41eb-a038-41f06d33bc21.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/3ffb13b8-a60f-40d2-a0da-2c52b8d89f29.png",
+      "Char 3": "https://content.dashtoon.ai/user-uploaded-files/76bc038c-bd97-4324-86b3-a7b776cedf6f.png",
+      "Num Chars": "3",
+      "Prompt Used": "Replace the characters in Image 1 with the characters from Image 2, Image 3, and Image 4 from left to right, strictly maintaining the original composition, background, lighting, and camera angle of Image 1. 1. Replace the man on the left in Image 1 with the woman with black braids from Image 2; she should wear the navy blue medical scrubs with grey long sleeves and adopt the man's leaning pose and concerned expression. 2. Replace the woman in the middle of Image 1 with the blonde woman from Image 3; she should wear the burgundy floral patterned dress from Image 3 while mirroring the original middle character's shocked expression and pose. 3. Replace the woman in scrubs on the right of Image 1 with the man from Image 4; he should wear the olive green polo shirt and beige trousers from Image 4 while adopting the woman's surprised expression and forward-facing stance. Every character should maintain the exact gaze, pose, and emotional intensity of the person they are replacing in Image 1."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/10fede5b-e53f-413c-8af9-7a35b62e6028.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/b0201f6c-2813-46f2-948e-7b8e488e67b6.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/89127731-d12b-4d40-af4a-9f2b8d4f7d44.png",
+      "Char 3": "https://content.dashtoon.ai/user-uploaded-files/01f48c2c-240e-4585-9901-41af9144515d.png",
+      "Num Chars": "3",
+      "Prompt Used": "A high-quality photograph set in a hospital room, meticulously recreating the scene from image 1. Replace the characters from left to right using the provided images. First, replace the man standing on the far left with the man in the navy blue suit with a red and blue striped tie from image 2, maintaining his upright posture and contemplative gaze. Second, replace the central figure leaning over the bed with the man with curly brown hair and a beard in the blue blazer from image 3, preserving the specific action of leaning forward and placing a hand on the patient's knee with an expression of concern. Third, replace the patient lying in the bed with the older grey-haired man in the blue wardrobe from image 4, depicting him lying still with eyes closed as if unconscious or sleeping. All aspects of the original composition, including the background, medical lighting, furniture, and framing, must remain identical to image 1. The characters should wear the specific outfits from their source images: the first man in his navy suit, the second man in his blue blazer and black top, and the patient in his dark blue loungewear."
+    },
+    {
+      "Input Image": "https://content.dashtoon.ai/user-uploaded-files/97658d4f-d502-48fb-98cd-c629337f540e.png",
+      "Char 1": "https://content.dashtoon.ai/user-uploaded-files/eaabc740-ee82-4c7d-a168-1ddfda12109d.png",
+      "Char 2": "https://content.dashtoon.ai/user-uploaded-files/4f4bad8b-748e-423d-9342-661fa42b3984.png",
+      "Char 3": "https://content.dashtoon.ai/user-uploaded-files/d8233cc6-8813-41f1-9b9b-e704af328202.png",
+      "Num Chars": "3",
+      "Prompt Used": "Recreate the medical room scene from image 1 with the following character swaps: The man with long brown hair on the left in image 1 is replaced by the woman with wavy brown hair wearing the black and brown checkered dress in image 2. The older woman in the middle in image 1 is replaced by the woman with curly dark hair wearing the red dress and beige fur coat in image 3. The blonde woman on the right in image 1 is replaced by the man with short dark hair and a beard wearing the dark grey suit in image 4. Ensure each new character perfectly adopts the pose, facial expression, and direction of gaze of the person they are replacing. The original background, composition, and the text overlay 'Split up and search!' must be maintained exactly as they appear in image 1."
+    }
+  ]
+}
