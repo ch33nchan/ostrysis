@@ -101,10 +101,13 @@ def main():
         print(f"  chars: {num_chars}  |  prompt: {prompt[:80]}...")
 
         # --- inference
+        # Flux2KleinPipeline takes all images as a list via `image`:
+        # [base_scene, char1, char2, ...] — no separate control_images param
+        all_images = [input_img] + char_imgs
+
         result = pipe(
             prompt=prompt,
-            image=input_img,
-            control_images=char_imgs,   # character reference images
+            image=all_images,
             num_inference_steps=args.steps,
             guidance_scale=args.guidance,
             height=args.size,
