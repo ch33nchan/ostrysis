@@ -51,18 +51,24 @@ def load_image_np(src: str) -> np.ndarray:
     return cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
 
 
-def get_embedding(app: FaceAnalysis, img_bgr: np.ndarray) -> np.ndarray | None:
-    """Detect largest face and return its ArcFace embedding, or None."""
+def get_embeddings(app: FaceAnalysis, img_bgr: np.ndarray) -> list[np.ndarray]:
+    """Return ArcFace embeddings for all detected faces, sorted largest first."""
     faces = app.get(img_bgr)
     if not faces:
-        return None
-    # pick largest face by bounding box area
-    face = max(faces, key=lambda f: (f.bbox[2] - f.bbox[0]) * (f.bbox[3] - f.bbox[1]))
-    return face.normed_embedding
+        return []
+    faces = sorted(faces, key=lambda f: (f.bbox[2] - f.bbox[0]) * (f.bbox[3] - f.bbox[1]), reverse=True)
+    return [f.normed_embedding for f in faces]
 
 
 def cosine_sim(a: np.ndarray, b: np.ndarray) -> float:
     return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-8))
+
+
+def best_match(query_embs: list[np.ndarray], ref_emb: np.ndarray) -> float:
+    """Best cosine similarity between any face in the output and the reference."""
+    if not query_embs:
+        return 0.0
+    return max(cosine_sim(q, ref_emb) for q in query_embs)
 
 
 # ---------------------------------------------------------------------------
@@ -102,15 +108,17 @@ def main():
 
         print(f"[{idx+1}/{len(rows)}] scoring {out_path}")
 
-        # load output
+        # load output — get ALL faces
         out_img = load_image_np(out_path)
-        out_emb = get_embedding(app, out_img)
-        if out_emb is None:
-            print(f"  No face detected in output — score: 0.0")
+        out_embs = get_embeddings(app, out_img)
+        if not out_embs:
+            print(f"  No faces detected in output — score: 0.0")
             results.append({"row": idx + 1, "score": 0.0, "note": "no face in output"})
             continue
 
-        # load char references
+        print(f"  {len(out_embs)} face(s) detected in output")
+
+        # for each char reference, find best matching face in the output
         char_scores = []
         for key in ["Char 1", "Char 2", "Char 3"]:
             url = row.get(key, "").strip()
@@ -118,12 +126,13 @@ def main():
                 continue
             try:
                 ref_img = load_image_np(url)
-                ref_emb = get_embedding(app, ref_img)
-                if ref_emb is None:
+                ref_embs = get_embeddings(app, ref_img)
+                if not ref_embs:
                     print(f"  {key}: no face detected in reference")
                     continue
-                sim = cosine_sim(out_emb, ref_emb)
-                print(f"  {key}: similarity = {sim:.4f}")
+                # largest face in reference vs best match in output
+                sim = best_match(out_embs, ref_embs[0])
+                print(f"  {key}: best match = {sim:.4f}")
                 char_scores.append(sim)
             except Exception as e:
                 print(f"  {key}: error — {e}")
